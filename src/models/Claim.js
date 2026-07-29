@@ -1,0 +1,3 @@
+import mongoose from 'mongoose'
+const schema=new mongoose.Schema({lostReportId:{type:mongoose.Schema.Types.ObjectId,ref:'Report',required:true},foundReportId:{type:mongoose.Schema.Types.ObjectId,ref:'Report',required:true},claimantId:{type:mongoose.Schema.Types.ObjectId,ref:'User',required:true},finderId:{type:mongoose.Schema.Types.ObjectId,ref:'User',required:true},ownershipExplanation:{type:String,required:true},status:{type:String,default:'pending'},handoverMethod:String,handoverLocation:String,handoverCode:String},{timestamps:true})
+export default mongoose.models.Claim||mongoose.model('Claim',schema)
