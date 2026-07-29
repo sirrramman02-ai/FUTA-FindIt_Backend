@@ -1,6 +1,6 @@
-# Campus FindIt Backend
+# FUTA FindIt Backend
 
-Express API for Campus FindIt. Deploy this repository to Render.
+Express API for FUTA FindIt. Deploy this repository to Render.
 
 ## Run locally
 
